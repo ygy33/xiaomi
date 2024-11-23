@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小米SU7  -  酷炫科技之选</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      overflow-x: hidden;
+    }
+    header {
+      background: linear-gradient(90deg, #ff8a00, #e52e71);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    }
+    h1, h2, h3 {
+      padding: 0;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+      color: #333;
+    }
+    section {
+      margin: 20px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+    .features, .specs, .smart, .comfort, .safety {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .feature, .spec, .smart-feature, .comfort-feature, .safety-feature {
+      flex: 1 1 300px;
+      margin: 10px;
+      padding: 20px;
+      transition: transform 0.5s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+    }
+    .feature::before, .spec::before, .smart-feature::before, .comfort-feature::before, .safety-feature::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.5);
+      transform: scale(0);
+      transition: transform 0.5s ease;
+      z-index: 1;
+    }
+    .feature:hover::before, .spec:hover::before, .smart-feature:hover::before, .comfort-feature:hover::before, .safety-feature:hover::before {
+      transform: scale(1);
+    }
+    .feature:hover, .spec:hover, .smart-feature:hover, .comfort-feature:hover, .safety-feature:hover {
+      transform: translateY(-5px);
+      z-index: 2;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    footer {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    }
+    @media (max-width: 768px) {
+      .features, .specs, .smart, .comfort, .safety {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+      <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="https://ygy33.github.io/ku/全车1.jpg" alt="正视角" /></div>
+        <div class="swiper-slide"><img src="https://ygy33.github.io/ku/全车2.jpg" alt="侧视角" /></div>
+        <div class="swiper-slide"><img src="https://ygy33.github.io/ku/全车3.jpg" alt="后俯视角" /></div>
+        <div class="swiper-slide"><img src="https://ygy33.github.io/ku/全车4.jpg" alt="后视角" /></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <h1>小米SU7</h1>
+    <h2>酷炫科技之选</h2>
+  </header>
+
+  <section class="features">
+    <h2>设计理念</h2>
+    <div class="feature">
+      <h3>外观设计</h3>
+      <p>追求现代感和科技感，采用流线型设计，赋予车辆动感外观，同时符合空气动力学原理，降低风阻，提升能效。</p>
+      <img src="https://ygy33.github.io/ku/AI生成小米su7设计理念.webp" alt="Feature 1">
+    </div>
+    <div class="feature">
+      <h3>内饰设计</h3>
+      <p>强调简洁风格与人性化布局，注重材料选择，创造舒适、实用的驾乘环境。内饰设计考虑驾驶者操作习惯和乘坐者舒适体验，力求视觉和触感高标准。</p>
+      <img src="https://ygy33.github.io/ku/内饰1.jpg" alt="Feature 2">
+    </div>
+  </section>
+
+  <section class="specs">
+    <h2>技术参数</h2>
+    <div class="spec">
+      <h3>电池规格</h3>
+      <ul>
+        <li>电池类型：锂离子电池或固态电池技术</li>
+        <li>电池容量：50kWh、60kWh 或更高</li>
+        <li>续航里程：400-600 公里</li>
+      </ul>
+    </div>
+    <div class="spec">
+      <h3>动力系统</h3>
+      <ul>
+        <li>电动机功率：150kW-300kW</li>
+        <li>0-100km/h 加速时间：4-7 秒</li>
+        <li>最高时速：160-200 公里/小时</li>
+      </ul>
+    </div>
+    <div class="spec">
+      <h3>充电性能</h3>
+      <ul>
+        <li>快充时间：30 分钟内充电至 80%</li>
+        <li>慢充时间：6-8 小时</li>
+        <li>充电网络支持：多种公共充电网络</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="smart">
+    <h2>智能配置</h2>
+    <div class="smart-feature">
+      <h3>智能驾驶</h3>
+      <p>配备激光雷达、高清摄像头、毫米波雷达和超声波雷达，全方位感知并准确识别地图、道路及障碍物信息。</p>
+      <img src="https://ygy33.github.io/ku/智能驾驶.jpg" alt="Smart Feature 1">
+    </div>
+    <div class="smart-feature">
+      <h3>智能座舱</h3>
+      <p>采用最新人机交互技术，配备 12.3 英寸高清触摸显示屏，实现手机、平板与中控屏无感连接和跨设备互控。</p>
+      <img src="https://ygy33.github.io/ku/智能座仓.jpg" alt="Smart Feature 2">
+    </div>
+    <div class="smart-feature">
+      <h3>智能互联</h3>
+      <p>支持车联网和智能互联功能，实现无缝连接。支持与其他品牌智能设备互联，内置小爱同学，可通过语音控制智能设备。</p>
+      <img src="https://ygy33.github.io/ku/智能互联.jpg" alt="Smart Feature 3">
+    </div>
+  </section>
+
+  <section class="comfort">
+    <h2>舒适性与便利性</h2>
+    <div class="comfort-feature">
+      <h3>外观设计</h3>
+      <p>轿跑车风格，流畅溜背线条和低矮车身姿态，增强视觉冲击力，降低风阻。</p>
+      <img src="https://ygy33.github.io/ku/全车图5.jpeg" alt="Comfort Feature 1">
+    </div>
+    <div class="comfort-feature">
+      <h3>内饰设计</h3>
+      <p>内饰配色鲜艳，提供高度自定义设计，几乎所有中控配件均可拆卸或替换。DIY 功能槽提供香氛、手台和音响等多种选择。</p>
+      <img src="https://ygy33.github.io/ku/内饰2.jpg" alt="Comfort Feature 2">
+    </div>
+  </section>
+
+  <section class="safety">
+    <h2>安全性能</h2>
+    <div class="safety-feature">
+      <h3>车身结构</h3>
+      <p>创新铠甲笼式钢铝混合车身设计，高强度钢和铝合金占比 90.1%，扭转刚度高达 51000N·m/deg，碰撞中有效保护乘员舱空间。</p>
+      <img src="https://ygy33.github.io/ku/车身结构.jpg" alt="Safety Feature 1">
+    </div>
+    <div class="safety-feature">
+      <h3>安全气囊</h3>
+      <p>配备 7 个安全气囊，包括中间远端气囊，侧面碰撞中有效防止车内乘员相互碰撞。前向紧急制动功能减少误触发，提高安全性。</p>
+    </div>
+    <div class="safety-feature">
+      <h3>碰撞测试成绩</h3>
+      <p>多项碰撞测试中表现良好，懂车帝 30 款车型碰撞测试中，小米SU7 在正面碰撞、追尾碰撞和钻入卡车碰撞测试中均取得可接受或优秀成绩。</p>
+    </div>
+  </section>
+
+
+
+  <footer>
+    <p>&copy; 小米SU7  -  酷炫科技之选</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".swiper-container", {
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      on: {
+        init: function () {
+          document.querySelector('.swiper-slide-active').classList.add('zoom');
+        },
+        slideChangeTransitionEnd: function () {
+          const zoomedSlide = document.querySelector('.swiper-slide.zoom');
+          zoomedSlide && zoomedSlide.classList.remove('zoom');
+          document.querySelector('.swiper-slide-active').classList.add('zoom');
+        },
+      },
+    });
+
+    // Add zoom class to active slide for swiper coverflow effect
+    const zoom = (event) => {
+      const slide = event.target;
+      slide.classList.add('zoom');
+    };
+
+    // Remove zoom class for swiper coverflow effect
+    const unzoom = (event) => {
+      const slide = event.target;
+      slide.classList.remove('zoom');
+    };
+
+    swiper.slides.each((index, slide) => {
+      slide.classList.add('zoom');
+      slide.addEventListener('mouseenter', zoom);
+      slide.addEventListener('mouseleave', unzoom);
+    });
+  </script>
+</body>
+</html>
